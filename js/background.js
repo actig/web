@@ -141,7 +141,7 @@ function randomImage() {
     var sprite = new Image();
     sprite.onload = function() {
         show(url);
-    }
+    };
     sprite.src = url;
 }
 
