@@ -130,7 +130,7 @@ function randomImage() {
         background.style.backgroundImage = "url('" + url + "')";
         background.style.opacity = "1";
 
-        setTimeout(randomImage, 5000);
+        setTimeout(randomImage, 10000);
     }
 
     var min = 0;
