@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    -webkit-filter: brightness(90%) saturate(140%) contrast(105%);
+    opacity: 0;
+    transition: opacity .2s ease-in;
+    background-clip: content-box;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loader {
+    animation: rotate 0.7s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/logo-sq.png');
+    background-size: 100%;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
